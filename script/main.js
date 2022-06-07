@@ -1,3 +1,35 @@
+//LANDING PAGE ANIMATION//
+
+var scene = document.getElementById("scene");
+var parallaxInstance = new Parallax(scene);
+
+var keys = [
+  "Mercury",
+  "Venus",
+  "Earth",
+  "Mars",
+  "Jupiter",
+  "Saturn",
+  "Uranus",
+  "Neptune"
+];
+var slider = new Swiper(".swiper-container", {
+  slidesPerView: "auto",
+  spaceBetween: 150,
+  centeredSlides: true,
+  mousewheel: true,
+  pagination: {
+    el: ".planet-links",
+    clickable: true,
+    renderBullet: function(index, className) {
+      return '<div class="' + className + '">' + keys[index] + "</div>";
+    }
+  }
+});
+
+
+//REVIEWS//
+
 let arrowButtons = document.getElementsByClassName("arrow");
 let reviews = document.getElementsByClassName("review");
 let modus = "one-two-three";
