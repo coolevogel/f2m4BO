@@ -7,9 +7,9 @@
   
   body {
     overflow-x: hidden;
-    font-family: "Roboto";
     list-style: none;
-    background: #000;
+    background: black;
+    font-family: sans-serif;
   }
   
   nav {
@@ -24,6 +24,7 @@
   }
   
   .logo {
+    font-family: "alphacentauri";
     color: #fff;
     font-weight: 600;
     font-size: 1.6rem;
@@ -108,45 +109,55 @@
     filter: brightness(0.5);
   }
 
-  .sectiontwo{
-    background: white;
-    height: 50rem;
+  .homepage--filler{
+    background: black;
+    height: 15rem;
   }
 
+  .section--projectcards{
+    background: #055973;
+    height: 100rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  
 
   .section--reviews{
+    height: 30rem;
     padding: 4rem;
     height: auto;
-    background: black;
+    background: url('/images/parallax.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
     display: flex;
     align-items: center;
   }
 
   .arrow{
       width: 10%;
-      height: 100%;
-      background: black;
-      font-size: 300%;
+      height: 10rem;
+      font-size: 1000%;
       outline: 0;
       border: 0;
       color: white;
       display: flex;
       justify-content: center;
       align-items: center;
+      background: transparent;
   }
 
   .arrow:hover{
       cursor: pointer;
       background: aquamarine;
-      border-radius: 3rem;
+      border-radius: 25%;
   }
 
   .reviews{
       justify-content: center;
       display: flex;
-      background: black;
       align-items: center;
-      height: 100%;
+      height: 35rem;
       gap: 4rem;
       width: 80%; 
       flex-wrap: wrap;
@@ -156,16 +167,18 @@
       position:relative;
       display: flex;
       font-size: 2rem;
-      min-height: 10rem;
+      min-height: 25rem;
       flex-direction: column;
       padding: 4rem;
       list-style: none;
+      height: 100%;
       width: 25%;
       background: white;
       border-radius: 3rem;
-      box-shadow: 1rem 1rem 0 0 aqua;
+      box-shadow: 1rem 1rem 0 0 #6756c4;
       animation-name: fadeIn;
       animation-duration: 0.7s;
+      gap: 1rem;
   }
 
   .review:nth-of-type(4), .review:nth-of-type(5), .review:nth-of-type(6){
@@ -173,7 +186,7 @@
   }
 
   .quote{
-      font-size: 200%;
+      font-size: 500%;
       position: absolute;
       top: 0;
       left: 50%;
@@ -190,6 +203,12 @@
       font-style: italic;
       border-bottom: 0.3rem solid black;
       padding-bottom: 2rem;
+  }
+
+  .footer{
+    background: white;
+    align-items: center;
+    height: 17rem;
   }
 
   @keyframes fadeIn{
